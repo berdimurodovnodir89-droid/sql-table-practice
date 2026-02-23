@@ -2,7 +2,7 @@ CREATE TYPE user_role AS ENUM (
     'admin',
     'manager',
     'customer'
-);
+); 
 
 CREATE TYPE user_status AS ENUM (
     'active',
@@ -23,7 +23,7 @@ CREATE TABLE users (
     status user_status NOT NULL DEFAULT 'pending',
     is_verified BOOLEAN DEFAULT false,
     login_attempts INTEGER DEFAULT 0,
-    last_login_at TIMESTAMPTZ,
+    c:\Users\Nodir\Downloads\users (3).sql TIMESTAMPTZ,
     created_at TIMESTAMPTZ DEFAULT now(),
     updated_at TIMESTAMPTZ DEFAULT now(),
 

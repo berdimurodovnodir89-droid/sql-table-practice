@@ -1,0 +1,1 @@
+select * FROM users where is_verified = TRUE

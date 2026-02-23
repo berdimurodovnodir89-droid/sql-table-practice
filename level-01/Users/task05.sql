@@ -1,0 +1,1 @@
+select * FROM users where username = 'john123'
