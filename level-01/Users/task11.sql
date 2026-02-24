@@ -1,7 +1,4 @@
-UPDATE users
-SET is_verified = true (
-    SELECT id
-    FROM users
-    ORDER BY last_login_at DESC
-    LIMIT 5
-);
+SELECT
+    id, username, role
+    from users
+    where role IN ('admin', 'manager')
