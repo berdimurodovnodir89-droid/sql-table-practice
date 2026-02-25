@@ -23,7 +23,6 @@ CREATE TABLE users (
     status user_status NOT NULL DEFAULT 'pending',
     is_verified BOOLEAN DEFAULT false,
     login_attempts INTEGER DEFAULT 0,
-    c:\Users\Nodir\Downloads\users (3).sql TIMESTAMPTZ,
     created_at TIMESTAMPTZ DEFAULT now(),
     updated_at TIMESTAMPTZ DEFAULT now(),
 

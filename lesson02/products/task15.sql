@@ -1,5 +1,4 @@
-SELECT id,name,created_at
+SELECT *
 FROM products
-ORDER BY created_at DESC
-LIMIT 25
-OFFSET (3-1)*25;
+ORDER BY created_at
+LIMIT 25 OFFSET 50;
