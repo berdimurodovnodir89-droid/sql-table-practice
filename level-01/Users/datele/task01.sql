@@ -1,0 +1,1 @@
+delete FROM users WHERE username = 'temp_user';
