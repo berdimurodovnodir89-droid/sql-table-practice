@@ -1,17 +1,6 @@
-CREATE TYPE product_status AS ENUM (
-    'draft',
-    'active',
-    'customer',
-    'inactive'
-);
-
-CREATE TYPE product_condition AS ENUM (
-    'new',
-    'used'
-);
 
 CREATE TABLE products (
-    id BIGSERIAL PRIMARY KEY,
+    id BIGSERIAL UNIQUE,
     name VARCHAR(200) NOT NULL,
     slug VARCHAR(200) NOT NULL UNIQUE,
     description TEXT,
